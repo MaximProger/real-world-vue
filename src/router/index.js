@@ -5,7 +5,7 @@ import EventShow from '../views/EventShow.vue'
 import EventCreate from '../views/EventCreate.vue'
 
 Vue.use(VueRouter)
-
+;('history')
 const routes = [
   {
     path: '/',
@@ -13,15 +13,17 @@ const routes = [
     component: EventList
   },
   {
-    path: '/event',
-    name: 'event-show',
-    component: EventShow
-  },
-  {
     path: '/event/create',
     name: 'event-create',
     component: EventCreate
+  },
+  {
+    path: '/event/:id',
+    name: 'event-show',
+    component: EventShow,
+    props: true
   }
+
   // {
   //   path: "/about-us",
   //   name: "about",
