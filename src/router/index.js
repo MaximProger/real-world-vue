@@ -5,7 +5,7 @@ import EventShow from '../views/EventShow.vue'
 import EventCreate from '../views/EventCreate.vue'
 
 Vue.use(VueRouter)
-;('history')
+
 const routes = [
   {
     path: '/',
@@ -37,7 +37,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'history'
 })
 
 export default router
