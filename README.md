@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
+### Now to spin up this little API server we just run:
+```
+json-server --watch db.json
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
